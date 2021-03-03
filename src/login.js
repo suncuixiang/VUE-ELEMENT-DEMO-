@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import './mock'
 
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Login from './Login.vue'
 
 /* 导入公共样式 */
 import './assets/reset.min.css';
@@ -16,7 +14,5 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+  render: h => h(Login)
 }).$mount('#app')
